@@ -54,32 +54,7 @@ export default function Index() {
     }
   ];
 
-  const teachers = [
-    {
-      id: 1,
-      name: "Елена Михайловна Соколова",
-      role: "Основатель академии",
-      specialization: "Педагогика и психология",
-      experience: "25 лет опыта",
-      description: "Кандидат педагогических наук, автор 50+ научных публикаций"
-    },
-    {
-      id: 2,
-      name: "Дмитрий Александрович Петров",
-      role: "Ведущий преподаватель",
-      specialization: "Менеджмент и управление",
-      experience: "18 лет опыта",
-      description: "MBA, эксперт в области корпоративного обучения"
-    },
-    {
-      id: 3,
-      name: "Ольга Сергеевна Иванова",
-      role: "Преподаватель",
-      specialization: "IT и цифровые технологии",
-      experience: "12 лет опыта",
-      description: "Специалист по современным образовательным платформам"
-    }
-  ];
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -91,7 +66,7 @@ export default function Index() {
           </div>
           <div className="hidden md:flex gap-6">
             <a href="#programs" className="text-sm font-medium hover:text-primary transition-colors">Программы</a>
-            <a href="#teachers" className="text-sm font-medium hover:text-primary transition-colors">Преподаватели</a>
+            <a href="#partnership" className="text-sm font-medium hover:text-primary transition-colors">Партнёрство</a>
             <a href="#apply" className="text-sm font-medium hover:text-primary transition-colors">Запись</a>
             <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </div>
@@ -104,26 +79,26 @@ export default function Index() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in space-y-6">
               <div className="space-y-4">
-                <h1 className="text-3xl md:text-5xl font-bold leading-tight uppercase">
+                <h1 className="text-3xl md:text-5xl leading-tight uppercase">
                   Национальная академия<br />
                   профессионального образования<br />
                   Ольги Ли
                 </h1>
-                <h2 className="text-xl md:text-2xl font-bold text-primary uppercase">
+                <h2 className="text-xl md:text-2xl text-primary uppercase">
                   Как стать косметологом без медицинского образования
                 </h2>
                 <div className="inline-block bg-primary/10 px-4 py-2 rounded-lg">
-                  <p className="text-xs md:text-sm font-semibold text-foreground">
+                  <p className="text-xs md:text-sm text-foreground">
                     Образовательная лицензия №ЛО35-01298-77/00554989 от 22.06.22
                   </p>
                 </div>
               </div>
 
               <div className="space-y-4 text-base md:text-lg pt-4">
-                <p className="font-bold">
+                <p className="font-light">
                   НА СВЯЗИ Я, ОЛЬГА ЛИ, ОСНОВАТЕЛЬ И РЕКТОР НАЦИОНАЛЬНОЙ АКАДЕМИИ ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (НАПО)
                 </p>
-                <p className="font-semibold text-primary">
+                <p className="text-primary">
                   Я РАДА ПРИВЕТСТВОВАТЬ ВАС НА САЙТЕ НАПО
                 </p>
                 <p>
@@ -164,7 +139,7 @@ export default function Index() {
       <section id="programs" className="py-20 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Программы обучения</h2>
+            <h2 className="text-3xl md:text-4xl text-primary mb-4">Программы обучения</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Выберите программу, которая соответствует вашим целям и уровню подготовки
             </p>
@@ -200,37 +175,61 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="teachers" className="py-20">
+      <section id="partnership" className="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/5">
         <div className="container">
-          <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Наши преподаватели</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Команда профессионалов с многолетним опытом работы в образовании
+          <div className="text-center mb-16 animate-slide-up">
+            <h2 className="text-3xl md:text-5xl text-primary mb-4 uppercase tracking-wide">Партнерство с НАПО</h2>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Лучшие преподаватели бьюти сферы уже сотрудничают с НАПО
+            </p>
+            <p className="text-base md:text-lg max-w-3xl mx-auto mt-4 leading-relaxed">
+              У вас есть возможность присоединиться и преподавать легально, выдавая документы установленного образца вашим ученикам, 
+              а это означает что вы будете на шаг впереди своих конкурентов
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {teachers.map((teacher, index) => (
-              <Card key={teacher.id} className="animate-slide-up hover:shadow-lg transition-all" style={{ animationDelay: `${index * 100}ms` }}>
-                <CardHeader>
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-primary to-primary/60 mx-auto mb-4 flex items-center justify-center">
-                    <Icon name="User" className="h-12 w-12 text-white" />
-                  </div>
-                  <CardTitle className="text-center text-xl">{teacher.name}</CardTitle>
-                  <CardDescription className="text-center text-primary font-semibold">{teacher.role}</CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-2">
-                  <div className="flex items-start gap-2">
-                    <Icon name="Briefcase" className="h-4 w-4 text-muted-foreground mt-1 flex-shrink-0" />
-                    <span className="text-sm">{teacher.specialization}</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <Icon name="Award" className="h-4 w-4 text-muted-foreground mt-1 flex-shrink-0" />
-                    <span className="text-sm">{teacher.experience}</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground pt-2">{teacher.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <Card className="text-center p-8 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl">
+              <div className="mb-6">
+                <Icon name="FileCheck" className="h-16 w-16 text-primary mx-auto mb-4" />
+                <h3 className="text-xl md:text-2xl text-primary mb-2">Дипломы о профессиональной переподготовке</h3>
+              </div>
+              <p className="text-sm leading-relaxed">Документы с занесением в ФИС ФРДО</p>
+            </Card>
+
+            <Card className="text-center p-8 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl" style={{ animationDelay: '100ms' }}>
+              <div className="mb-6">
+                <Icon name="Award" className="h-16 w-16 text-primary mx-auto mb-4" />
+                <h3 className="text-xl md:text-2xl text-primary mb-2">Свидетельства о профессиональном обучении</h3>
+              </div>
+              <p className="text-sm leading-relaxed">Документы с занесением в ФИС ФРДО</p>
+            </Card>
+
+            <Card className="text-center p-8 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl" style={{ animationDelay: '200ms' }}>
+              <div className="mb-6">
+                <Icon name="BadgeCheck" className="h-16 w-16 text-primary mx-auto mb-4" />
+                <h3 className="text-xl md:text-2xl text-primary mb-2">Удостоверения о повышении квалификации</h3>
+              </div>
+              <p className="text-sm leading-relaxed">Документы с занесением в ФИС ФРДО</p>
+            </Card>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="p-8 text-center animate-slide-up bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/30 hover:shadow-2xl transition-all" style={{ animationDelay: '300ms' }}>
+              <Icon name="Wallet" className="h-12 w-12 text-primary mx-auto mb-4" />
+              <div className="text-5xl md:text-6xl text-primary mb-4 font-light">15 000 ₽</div>
+              <p className="text-base leading-relaxed uppercase tracking-wide">
+                Стоимость первоначального взноса при оплате курса по внутренней рассрочке НАПО
+              </p>
+            </Card>
+
+            <Card className="p-8 text-center animate-slide-up bg-gradient-to-br from-primary/10 to-primary/5 border-2 border-primary/30 hover:shadow-2xl transition-all" style={{ animationDelay: '400ms' }}>
+              <Icon name="Briefcase" className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-3xl md:text-4xl text-primary mb-4 uppercase">Трудоустройство</h3>
+              <p className="text-base leading-relaxed">
+                НАПО помогает с трудоустройством своих выпускников, поскольку сотрудничает с салонами красоты и владельцами красивого бизнеса
+              </p>
+            </Card>
           </div>
         </div>
       </section>
@@ -238,7 +237,7 @@ export default function Index() {
       <section id="apply" className="py-20 bg-gradient-to-br from-primary/5 via-background to-background">
         <div className="container max-w-2xl">
           <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Записаться на обучение</h2>
+            <h2 className="text-3xl md:text-4xl text-primary mb-4">Записаться на обучение</h2>
             <p className="text-lg text-muted-foreground">
               Заполните форму, и мы свяжемся с вами для уточнения деталей
             </p>
@@ -313,7 +312,7 @@ export default function Index() {
       <section id="contacts" className="py-20 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Контакты</h2>
+            <h2 className="text-3xl md:text-4xl text-primary mb-4">Контакты</h2>
             <p className="text-lg text-muted-foreground">
               Свяжитесь с нами любым удобным способом
             </p>
