@@ -99,24 +99,63 @@ export default function Index() {
         </div>
       </nav>
 
-      <section className="relative py-20 md:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-secondary via-background to-background" />
-        <div className="container relative">
-          <div className="max-w-3xl animate-fade-in">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Национальная академия профессионального образования
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Качественное образование для вашего профессионального роста. 
-              Современные программы, опытные преподаватели, гибкий формат обучения.
-            </p>
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="text-lg px-8" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                Записаться на обучение
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8" onClick={() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' })}>
-                Наши программы
-              </Button>
+      <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-secondary via-background to-background">
+        <div className="container">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in space-y-6">
+              <div className="space-y-4">
+                <h1 className="text-3xl md:text-5xl font-bold leading-tight uppercase">
+                  Национальная академия<br />
+                  профессионального образования<br />
+                  Ольги Ли
+                </h1>
+                <h2 className="text-xl md:text-2xl font-bold text-primary uppercase">
+                  Как стать косметологом без медицинского образования
+                </h2>
+                <div className="inline-block bg-primary/10 px-4 py-2 rounded-lg">
+                  <p className="text-xs md:text-sm font-semibold text-foreground">
+                    Образовательная лицензия №ЛО35-01298-77/00554989 от 22.06.22
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-4 text-base md:text-lg pt-4">
+                <p className="font-bold">
+                  НА СВЯЗИ Я, ОЛЬГА ЛИ, ОСНОВАТЕЛЬ И РЕКТОР НАЦИОНАЛЬНОЙ АКАДЕМИИ ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (НАПО)
+                </p>
+                <p className="font-semibold text-primary">
+                  Я РАДА ПРИВЕТСТВОВАТЬ ВАС НА САЙТЕ НАПО
+                </p>
+                <p>
+                  С НАПО ВЫ СТАНЕТЕ МАСТЕРОМ В ЗАКОНЕ И СПЕЦИАЛИСТОМ В САМОМ ВОСТРЕБОВАННОМ НАПРАВЛЕНИИ БЬЮТИ СФЕРЫ — КОСМЕТОЛОГИИ (И НЕ ТОЛЬКО)
+                </p>
+                <p>
+                  В НАПО СОЗДАН СОВРЕМЕННЫЙ ОБРАЗОВАТЕЛЬНЫЙ ЦЕНТР, ГДЕ АБСОЛЮТНО ИЗ ЛЮБОЙ ТОЧКИ МОЖНО ПОЛУЧИТЬ КАЧЕСТВЕННЫЕ И АКТУАЛЬНЫЕ ЗНАНИЯ И ВОСТРЕБОВАННУЮ ПРОФЕССИЮ В КРАСИВОМ БИЗНЕСЕ
+                </p>
+                <p>
+                  НАПО СПЕЦИАЛИЗИРУЕТСЯ НА ДПО И ПО В БЬЮТИ СФЕРЕ И ОБУЧЕНИИ СПЕЦИАЛИСТОВ НА ПРЕПОДАВАТЕЛЕЙ ДПО И ПО
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-4 pt-4">
+                <Button size="lg" className="text-base px-8" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться на обучение
+                </Button>
+                <Button size="lg" variant="outline" className="text-base px-8" onClick={() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Наши программы
+                </Button>
+              </div>
+            </div>
+
+            <div className="animate-slide-up lg:order-last">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/e39aad56-3394-420d-b931-7a01f02ae89f.jpg" 
+                  alt="Ольга Ли - основатель и ректор НАПО"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
+              </div>
             </div>
           </div>
         </div>
