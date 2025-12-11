@@ -60,9 +60,13 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Icon name="BookOpen" className="h-6 w-6 text-primary" />
-            <span className="text-xl font-bold">НАПО</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/66353ed5-c3c5-4fb3-9a0a-18a2efd2fd03.jpg" 
+              alt="НАПО лого"
+              className="h-10 w-10 object-contain"
+            />
+            <span className="text-xl font-heading font-bold">НАПО</span>
           </div>
           <div className="hidden md:flex gap-6">
             <a href="#programs" className="text-sm font-medium hover:text-primary transition-colors">Программы</a>
@@ -76,25 +80,43 @@ export default function Index() {
 
       <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-secondary via-background to-background">
         <div className="container">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in space-y-6">
-              <div className="space-y-4">
-                <h1 className="text-3xl md:text-5xl leading-tight uppercase">
-                  Национальная академия<br />
-                  профессионального образования<br />
-                  Ольги Ли
-                </h1>
-                <h2 className="text-xl md:text-2xl text-primary uppercase">
-                  Как стать косметологом без медицинского образования
-                </h2>
-                <div className="inline-block bg-primary/10 px-4 py-2 rounded-lg">
-                  <p className="text-xs md:text-sm text-foreground">
-                    Образовательная лицензия №ЛО35-01298-77/00554989 от 22.06.22
-                  </p>
+          <div className="animate-fade-in space-y-6 max-w-5xl mx-auto">
+            <div className="space-y-4">
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/66353ed5-c3c5-4fb3-9a0a-18a2efd2fd03.jpg" 
+                  alt="НАПО лого"
+                  className="h-16 w-16 object-contain"
+                />
+              </div>
+              <h1 className="text-3xl md:text-5xl leading-tight uppercase font-heading">
+                Национальная академия<br />
+                профессионального образования<br />
+                Ольги Ли
+              </h1>
+              <h2 className="text-xl md:text-2xl text-primary uppercase">
+                Как стать косметологом без медицинского образования
+              </h2>
+              <div className="inline-block bg-primary/10 px-4 py-2 rounded-lg">
+                <p className="text-xs md:text-sm text-foreground">
+                  Образовательная лицензия №ЛО35-01298-77/00554989 от 22.06.22
+                </p>
+              </div>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-8 items-start pt-4">
+              <div className="animate-slide-up">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/e39aad56-3394-420d-b931-7a01f02ae89f.jpg" 
+                    alt="Ольга Ли - основатель и ректор НАПО"
+                    className="w-full h-auto object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
                 </div>
               </div>
 
-              <div className="space-y-4 text-base md:text-lg pt-4">
+              <div className="space-y-4 text-base md:text-lg">
                 <p className="font-light">
                   НА СВЯЗИ Я, ОЛЬГА ЛИ, ОСНОВАТЕЛЬ И РЕКТОР НАЦИОНАЛЬНОЙ АКАДЕМИИ ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (НАПО)
                 </p>
@@ -111,26 +133,15 @@ export default function Index() {
                   НАПО СПЕЦИАЛИЗИРУЕТСЯ НА ДПО И ПО В БЬЮТИ СФЕРЕ И ОБУЧЕНИИ СПЕЦИАЛИСТОВ НА ПРЕПОДАВАТЕЛЕЙ ДПО И ПО
                 </p>
               </div>
-
-              <div className="flex flex-wrap gap-4 pt-4">
-                <Button size="lg" className="text-base px-8" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                  Записаться на обучение
-                </Button>
-                <Button size="lg" variant="outline" className="text-base px-8" onClick={() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' })}>
-                  Наши программы
-                </Button>
-              </div>
             </div>
 
-            <div className="animate-slide-up lg:order-last flex items-start">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/e39aad56-3394-420d-b931-7a01f02ae89f.jpg" 
-                  alt="Ольга Ли - основатель и ректор НАПО"
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
-              </div>
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Button size="lg" className="text-base px-8" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                Записаться на обучение
+              </Button>
+              <Button size="lg" variant="outline" className="text-base px-8" onClick={() => document.getElementById('programs')?.scrollIntoView({ behavior: 'smooth' })}>
+                Наши программы
+              </Button>
             </div>
           </div>
         </div>
