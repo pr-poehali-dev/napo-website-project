@@ -62,15 +62,16 @@ export default function Index() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/66353ed5-c3c5-4fb3-9a0a-18a2efd2fd03.jpg" 
+              src="https://cdn.poehali.dev/files/Logo_Li-01.png" 
               alt="НАПО лого"
-              className="h-10 w-10 object-contain"
+              className="h-10 w-auto object-contain"
             />
             <span className="text-xl font-heading font-bold">НАПО</span>
           </div>
           <div className="hidden md:flex gap-6">
             <a href="#programs" className="text-sm font-medium hover:text-primary transition-colors">Программы</a>
             <a href="#partnership" className="text-sm font-medium hover:text-primary transition-colors">Партнёрство</a>
+            <a href="#teachers" className="text-sm font-medium hover:text-primary transition-colors">Преподаватели</a>
             <a href="#apply" className="text-sm font-medium hover:text-primary transition-colors">Запись</a>
             <a href="#contacts" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </div>
@@ -84,9 +85,9 @@ export default function Index() {
             <div className="space-y-4">
               <div className="flex items-center gap-4 mb-6">
                 <img 
-                  src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/66353ed5-c3c5-4fb3-9a0a-18a2efd2fd03.jpg" 
+                  src="https://cdn.poehali.dev/files/Logo_Li-01.png" 
                   alt="НАПО лого"
-                  className="h-16 w-16 object-contain"
+                  className="h-20 w-auto object-contain"
                 />
               </div>
               <h1 className="text-3xl md:text-5xl leading-tight uppercase font-heading">
@@ -108,7 +109,7 @@ export default function Index() {
               <div className="animate-slide-up">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img 
-                    src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/e39aad56-3394-420d-b931-7a01f02ae89f.jpg" 
+                    src="https://cdn.poehali.dev/files/noroot.png" 
                     alt="Ольга Ли - основатель и ректор НАПО"
                     className="w-full h-auto object-cover"
                   />
@@ -155,7 +156,7 @@ export default function Index() {
               Выберите нужный вам тариф и запишитесь на бесплатное ознакомительное занятие
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50">
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Косметик-эстетист</CardTitle>
@@ -341,6 +342,91 @@ export default function Index() {
               <p className="text-base leading-relaxed">
                 НАПО помогает с трудоустройством своих выпускников, поскольку сотрудничает с салонами красоты и владельцами красивого бизнеса
               </p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="teachers" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-12 animate-slide-up">
+            <h2 className="text-3xl md:text-4xl text-primary mb-6 uppercase tracking-wide">Наши преподаватели</h2>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto font-medium">
+              КАЖДЫЙ ПРЕПОДАВАТЕЛЬ ИМЕЕТ ПРЕПОДАВАТЕЛЬСКИЙ СТАЖ ОТ 5 ЛЕТ
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50">
+              <CardHeader className="text-center">
+                <div className="mb-4 mx-auto w-32 h-32 rounded-full overflow-hidden bg-muted">
+                  <img 
+                    src="https://cdn.poehali.dev/files/noroot.png" 
+                    alt="Ольга Ли"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="text-xl text-primary uppercase">Ольга Ли</CardTitle>
+                <CardDescription className="text-base font-medium">СТАЖ 6 ЛЕТ</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-sm">
+                  <p>• ОСНОВАТЕЛЬ И РЕКТОР НАПО</p>
+                  <p>• КОСМЕТИК-ЭСТЕТИСТ</p>
+                  <p>• ПРИЗЕР ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ</p>
+                  <p>• СУДЬЯ ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ</p>
+                  <p>• СПИКЕР НАУЧНО-ПРАКТИЧЕСКИХ КОНФЕРЕНЦИЙ</p>
+                  <p>• ПРЕПОДАВАТЕЛЬ КОСМЕТОЛОГИИ/ШУГАРИНГУ/ВАКСИНГУ</p>
+                  <p>• АВТОР КУРСОВ ПРОФЕССИОНАЛЬНОЙ ПЕРЕПОДГОТОВКИ СПЕЦИАЛИСТ ПО ПРЕДОСТАВЛЕНИЮ БЫТОВЫХ КОСМЕТИЧЕСКИХ УСЛУГ, ПРЕПОДАВАТЕЛЬ ДПО И ПО, МАСТЕР ПРОИЗВОДСТВЕННОГО ОБУЧЕНИЯ, КУРСОВ ПОВЫШЕНИЯ КВАЛИФИКАЦИИ МУЖСКАЯ КОСМЕТОЛОГИЯ, СУДЬЯ ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ, ШКОЛА КОМИССАРОВ, ШКОЛА ВОЛОНТЕРОВ</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '100ms' }}>
+              <CardHeader className="text-center">
+                <div className="mb-4 mx-auto w-32 h-32 rounded-full overflow-hidden bg-muted">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/0e04dbd5-7e0b-4324-b5a4-d1ba9c1dfc88.jpg" 
+                    alt="Алексей Виноградов"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="text-xl text-primary uppercase">Алексей Виноградов</CardTitle>
+                <CardDescription className="text-base font-medium">СТАЖ 6 ЛЕТ</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-sm">
+                  <p>• ХИМИК-ТЕХНОЛОГ</p>
+                  <p>• КОСМЕТИК-ЭСТЕТИСТ</p>
+                  <p>• ПРИЗЕР ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ</p>
+                  <p>• СПИКЕР</p>
+                  <p>• СУДЬЯ ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ</p>
+                  <p>• ПРЕПОДАВАТЕЛЬ МУЖСКОГО ШУГАРИНГА И КОСМЕТИЧЕСКОЙ ХИМИИ</p>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '200ms' }}>
+              <CardHeader className="text-center">
+                <div className="mb-4 mx-auto w-32 h-32 rounded-full overflow-hidden bg-muted">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/0e04dbd5-7e0b-4324-b5a4-d1ba9c1dfc88.jpg" 
+                    alt="Армен Погосов"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <CardTitle className="text-xl text-primary uppercase">Армен Погосов</CardTitle>
+                <CardDescription className="text-base font-medium">СТАЖ 3 ЛЕТ</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2 text-sm">
+                  <p>• КОСМЕТИК-ЭСТЕТИСТ</p>
+                  <p>• ПРИЗЕР ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ</p>
+                  <p>• СУДЬЯ ПРОФЕССИОНАЛЬНЫХ СОРЕВНОВАНИЙ</p>
+                  <p>• СПИКЕР</p>
+                  <p>• ПРЕПОДАВАТЕЛЬ ПО МАССАЖУ</p>
+                </div>
+              </CardContent>
             </Card>
           </div>
         </div>
