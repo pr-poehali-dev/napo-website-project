@@ -552,6 +552,126 @@ export default function Index() {
         </div>
       </section>
 
+      <section id="partners" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-16 animate-slide-up">
+            <h2 className="text-3xl md:text-5xl text-primary mb-6 uppercase tracking-wide">Наши партнеры</h2>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Лучшие специалисты бьюти индустрии доверяют НАПО
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 border-primary/20">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-[300px_1fr] gap-8 items-center">
+                  <div className="mx-auto">
+                    <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                      <img 
+                        src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/0e652d71-1f24-4ee8-94ca-c9eebb79aad1.jpg" 
+                        alt="Мариам Варданян"
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <h3 className="text-2xl md:text-3xl text-primary font-heading uppercase">Мариам Варданян</h3>
+                    <div className="space-y-2 text-base md:text-lg">
+                      <p className="text-muted-foreground uppercase">Луганская Народная Республика</p>
+                      <p className="font-medium uppercase">Основатель и руководитель учебного центра Grand Style</p>
+                      <p className="font-medium uppercase">Преподаватель</p>
+                      <div className="flex items-center gap-2 pt-2">
+                        <Icon name="Award" className="h-6 w-6 text-primary" />
+                        <p className="text-primary font-semibold uppercase">Стаж 8 лет</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" className="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/5">
+        <div className="container">
+          <div className="text-center mb-16 animate-slide-up">
+            <h2 className="text-3xl md:text-5xl text-primary mb-6 uppercase tracking-wide">Отзывы студентов</h2>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+              Что говорят наши выпускники о обучении в НАПО
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-6 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl">
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-base leading-relaxed mb-6">
+                  "Прошла курс по шугарингу в НАПО. Очень довольна качеством обучения! Преподаватели — настоящие профессионалы, всё объясняют понятно. Получила диплом и уже работаю в салоне!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Icon name="User" className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Анна Петрова</p>
+                    <p className="text-sm text-muted-foreground">Курс "Шугаринг"</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl" style={{ animationDelay: '100ms' }}>
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-base leading-relaxed mb-6">
+                  "Обучалась в НАПО на курсе классического массажа. Программа насыщенная, много практики. Особенно понравилась возможность рассрочки — это реально помогло! Рекомендую всем!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Icon name="User" className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Екатерина Смирнова</p>
+                    <p className="text-sm text-muted-foreground">Курс "Массаж"</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl md:col-span-2 lg:col-span-1" style={{ animationDelay: '200ms' }}>
+              <CardContent className="pt-6">
+                <div className="flex gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Icon key={i} name="Star" className="h-5 w-5 text-yellow-500 fill-yellow-500" />
+                  ))}
+                </div>
+                <p className="text-base leading-relaxed mb-6">
+                  "НАПО — это действительно профессионально! Закончила курс ваксинга, теперь открыла свой кабинет. Диплом признают везде, всё легально. Спасибо академии за знания и поддержку!"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                    <Icon name="User" className="h-6 w-6 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-semibold">Мария Волкова</p>
+                    <p className="text-sm text-muted-foreground">Курс "Ваксинг"</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="contacts" className="py-20 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12 animate-slide-up">
