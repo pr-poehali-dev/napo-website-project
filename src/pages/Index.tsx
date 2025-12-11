@@ -122,7 +122,7 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="animate-slide-up lg:order-last">
+            <div className="animate-slide-up lg:order-last flex items-start">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="https://cdn.poehali.dev/projects/e97a4418-ecb4-4876-941d-008a483eeb9f/files/e39aad56-3394-420d-b931-7a01f02ae89f.jpg" 
@@ -139,38 +139,139 @@ export default function Index() {
       <section id="programs" className="py-20 bg-muted/30">
         <div className="container">
           <div className="text-center mb-12 animate-slide-up">
-            <h2 className="text-3xl md:text-4xl text-primary mb-4">Программы обучения</h2>
+            <h2 className="text-3xl md:text-4xl text-primary mb-4 uppercase">Тарифы обучения</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Выберите программу, которая соответствует вашим целям и уровню подготовки
+              Выберите нужный вам тариф и запишитесь на бесплатное ознакомительное занятие
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {programs.map((program, index) => (
-              <Card key={program.id} className="hover:shadow-lg transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: `${index * 100}ms` }}>
-                <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <Icon name={program.icon as any} className="h-6 w-6 text-primary" />
-                  </div>
-                  <CardTitle className="text-xl">{program.title}</CardTitle>
-                  <CardDescription className="text-base">{program.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm">
-                      <Icon name="Clock" className="h-4 w-4 text-muted-foreground" />
-                      <span>{program.duration}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-sm">
-                      <Icon name="MapPin" className="h-4 w-4 text-muted-foreground" />
-                      <span>{program.format}</span>
-                    </div>
-                  </div>
-                  <Button className="w-full mt-6" variant="outline">
-                    Узнать подробнее
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50">
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Косметик-эстетист</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Мастер в законе</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">80 000 - 250 000 ₽</div>
+                  <div className="text-sm text-muted-foreground">252 академических часа</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
                   </Button>
-                </CardContent>
-              </Card>
-            ))}
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '50ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Преподаватель ДПО и ПО</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Как поднять свой статус и вырасти в доходе в бьюти сфере</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">80 000 - 200 000 ₽</div>
+                  <div className="text-sm text-muted-foreground">266 академических часов</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '100ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Мужской ваксинг</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">30 000 ₽</div>
+                  <div className="text-sm text-muted-foreground">72 академических часа</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '150ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Ваксинг</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">30 000 ₽</div>
+                  <div className="text-sm text-muted-foreground">72 академических часа</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '200ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Шугаринг</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">30 000 ₽</div>
+                  <div className="text-sm text-muted-foreground">72 академических часа</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '250ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Классический массаж лица/тела</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Стань профессиональным косметологом</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">от 30 000 ₽</div>
+                  <div className="text-sm text-muted-foreground">от 16 академических часов</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 md:col-span-2 lg:col-span-1" style={{ animationDelay: '300ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Карбокси</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Преображение. Будь в тренде</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">7 500 ₽</div>
+                  <div className="text-sm text-muted-foreground uppercase">Как увеличить свой доход и сохранить лояльность клиента</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 md:col-span-2 lg:col-span-1" style={{ animationDelay: '350ms' }}>
+              <CardHeader>
+                <CardTitle className="text-xl text-primary uppercase">Профилактика вросших волос</CardTitle>
+                <CardDescription className="text-base uppercase font-medium">Предупрежден значит вооружен</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="text-3xl text-primary">7 500 ₽</div>
+                  <div className="text-sm text-muted-foreground uppercase">Помоги своему клиенту стать обладателем красивой и здоровой кожи</div>
+                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                    Записаться
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -306,6 +407,58 @@ export default function Index() {
               </form>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section id="why-us" className="py-20 bg-gradient-to-br from-primary/5 via-background to-primary/5">
+        <div className="container">
+          <div className="text-center mb-16 animate-slide-up">
+            <h2 className="text-3xl md:text-5xl text-primary mb-6 uppercase tracking-wide">Почему выбирают нас</h2>
+            <p className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed uppercase">
+              Цель НАПО - сделать ваш процесс обучения интересным и доступным
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="p-8 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl">
+              <div className="text-center">
+                <Icon name="CreditCard" className="h-16 w-16 text-primary mx-auto mb-6" />
+                <h3 className="text-2xl text-primary mb-4 uppercase">Оплата обучения в рассрочку</h3>
+                <p className="text-base leading-relaxed mb-4 uppercase">
+                  Учитесь уже сейчас! А платите по частям.
+                </p>
+                <div className="text-4xl text-primary mb-2 font-light">от 1500 ₽</div>
+                <p className="text-sm text-muted-foreground uppercase">Первоначальный взнос</p>
+              </div>
+            </Card>
+
+            <Card className="p-8 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl" style={{ animationDelay: '100ms' }}>
+              <div className="text-center">
+                <Icon name="FileCheck" className="h-16 w-16 text-primary mx-auto mb-6" />
+                <h3 className="text-2xl text-primary mb-4 uppercase">Документы установленного образца</h3>
+                <div className="space-y-3 text-sm leading-relaxed">
+                  <p className="uppercase">✓ Диплом о профессиональной переподготовке</p>
+                  <p className="uppercase">✓ Удостоверение о повышении квалификации</p>
+                  <p className="uppercase">✓ Свидетельство о рабочей профессии</p>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-8 animate-slide-up border-primary/20 hover:border-primary/50 transition-all hover:shadow-xl md:col-span-2 lg:col-span-1" style={{ animationDelay: '200ms' }}>
+              <div className="text-center">
+                <Icon name="Database" className="h-16 w-16 text-primary mx-auto mb-6" />
+                <h3 className="text-2xl text-primary mb-4 uppercase">ФИС ФРДО</h3>
+                <div className="space-y-4 text-base leading-relaxed">
+                  <p className="uppercase">
+                    Документы об обучении в установленном порядке заносятся в федеральный реестр документов об образовании.
+                  </p>
+                  <p className="uppercase">
+                    Полная стоимость обучения указывается в договоре и вы можете вернуть НДФЛ в размере 13%
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
