@@ -204,8 +204,8 @@ export default function Index() {
                 <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="text-3xl text-primary">30 000 ₽</div>
+                <div className="flex-grow">
+                  <div className="text-3xl text-primary mb-4 h-12 flex items-center">30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">72 академических часа</div>
                 </div>
                 <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -220,8 +220,8 @@ export default function Index() {
                 <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="text-3xl text-primary">30 000 ₽</div>
+                <div className="flex-grow">
+                  <div className="text-3xl text-primary mb-4 h-12 flex items-center">30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">72 академических часа</div>
                 </div>
                 <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -236,8 +236,8 @@ export default function Index() {
                 <CardDescription className="text-base uppercase font-medium">Стань профессиональным косметологом</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="text-3xl text-primary">от 30 000 ₽</div>
+                <div className="flex-grow">
+                  <div className="text-3xl text-primary mb-4 h-12 flex items-center">от 30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">от 16 академических часов</div>
                 </div>
                 <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -252,8 +252,8 @@ export default function Index() {
                 <CardDescription className="text-base uppercase font-medium">Преображение. Будь в тренде</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="text-3xl text-primary">7 500 ₽</div>
+                <div className="flex-grow">
+                  <div className="text-3xl text-primary mb-4 h-12 flex items-center">7 500 ₽</div>
                   <div className="text-sm text-muted-foreground uppercase">Как увеличить свой доход и сохранить лояльность клиента</div>
                 </div>
                 <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
@@ -268,8 +268,8 @@ export default function Index() {
                 <CardDescription className="text-base uppercase font-medium">Предупрежден значит вооружен</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow flex flex-col">
-                <div className="space-y-4 flex-grow">
-                  <div className="text-3xl text-primary">7 500 ₽</div>
+                <div className="flex-grow">
+                  <div className="text-3xl text-primary mb-4 h-12 flex items-center">7 500 ₽</div>
                   <div className="text-sm text-muted-foreground uppercase">Помоги своему клиенту стать обладателем красивой и здоровой кожи</div>
                 </div>
                 <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
