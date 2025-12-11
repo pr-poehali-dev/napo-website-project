@@ -62,7 +62,7 @@ export default function Index() {
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-3">
             <img 
-              src="https://cdn.poehali.dev/files/Logo_Li-01.png" 
+              src="https://cdn.poehali.dev/files/Logo_Li_2-01.png" 
               alt="НАПО лого"
               className="h-10 w-auto object-contain"
             />
@@ -81,15 +81,8 @@ export default function Index() {
 
       <section className="relative py-16 md:py-24 overflow-hidden bg-gradient-to-br from-secondary via-background to-background">
         <div className="container">
-          <div className="animate-fade-in space-y-6 max-w-5xl mx-auto">
-            <div className="space-y-4">
-              <div className="flex items-center gap-4 mb-6">
-                <img 
-                  src="https://cdn.poehali.dev/files/Logo_Li-01.png" 
-                  alt="НАПО лого"
-                  className="h-20 w-auto object-contain"
-                />
-              </div>
+          <div className="animate-fade-in space-y-8 max-w-6xl mx-auto">
+            <div className="space-y-6">
               <h1 className="text-3xl md:text-5xl leading-tight uppercase font-heading">
                 Национальная академия<br />
                 профессионального образования<br />
@@ -105,8 +98,8 @@ export default function Index() {
               </div>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 items-start pt-4">
-              <div className="animate-slide-up">
+            <div className="grid lg:grid-cols-[400px_1fr] gap-8 items-center">
+              <div className="animate-slide-up order-2 lg:order-1">
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                   <img 
                     src="https://cdn.poehali.dev/files/noroot.png" 
@@ -117,11 +110,11 @@ export default function Index() {
                 </div>
               </div>
 
-              <div className="space-y-4 text-base md:text-lg">
+              <div className="space-y-4 text-base md:text-lg order-1 lg:order-2">
                 <p className="font-light">
                   НА СВЯЗИ Я, ОЛЬГА ЛИ, ОСНОВАТЕЛЬ И РЕКТОР НАЦИОНАЛЬНОЙ АКАДЕМИИ ПРОФЕССИОНАЛЬНОГО ОБРАЗОВАНИЯ (НАПО)
                 </p>
-                <p className="text-primary">
+                <p className="text-primary font-medium">
                   Я РАДА ПРИВЕТСТВОВАТЬ ВАС НА САЙТЕ НАПО
                 </p>
                 <p>
@@ -157,131 +150,131 @@ export default function Index() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50">
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 flex flex-col">
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Косметик-эстетист</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Мастер в законе</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">80 000 - 250 000 ₽</div>
                   <div className="text-sm text-muted-foreground">252 академических часа</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '50ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 flex flex-col" style={{ animationDelay: '50ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Преподаватель ДПО и ПО</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Как поднять свой статус и вырасти в доходе в бьюти сфере</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">80 000 - 200 000 ₽</div>
                   <div className="text-sm text-muted-foreground">266 академических часов</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '100ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 flex flex-col" style={{ animationDelay: '100ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Мужской ваксинг</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">72 академических часа</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '150ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 flex flex-col" style={{ animationDelay: '150ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Ваксинг</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">72 академических часа</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '200ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 flex flex-col" style={{ animationDelay: '200ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Шугаринг</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Как увеличить свой доход</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">72 академических часа</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50" style={{ animationDelay: '250ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 flex flex-col" style={{ animationDelay: '250ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Классический массаж лица/тела</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Стань профессиональным косметологом</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">от 30 000 ₽</div>
                   <div className="text-sm text-muted-foreground">от 16 академических часов</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 md:col-span-2 lg:col-span-1" style={{ animationDelay: '300ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 md:col-span-2 lg:col-span-1 flex flex-col" style={{ animationDelay: '300ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Карбокси</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Преображение. Будь в тренде</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">7 500 ₽</div>
                   <div className="text-sm text-muted-foreground uppercase">Как увеличить свой доход и сохранить лояльность клиента</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 md:col-span-2 lg:col-span-1" style={{ animationDelay: '350ms' }}>
+            <Card className="hover:shadow-xl transition-all duration-300 animate-slide-up border-2 hover:border-primary/50 md:col-span-2 lg:col-span-1 flex flex-col" style={{ animationDelay: '350ms' }}>
               <CardHeader>
                 <CardTitle className="text-xl text-primary uppercase">Профилактика вросших волос</CardTitle>
                 <CardDescription className="text-base uppercase font-medium">Предупрежден значит вооружен</CardDescription>
               </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
+              <CardContent className="flex-grow flex flex-col">
+                <div className="space-y-4 flex-grow">
                   <div className="text-3xl text-primary">7 500 ₽</div>
                   <div className="text-sm text-muted-foreground uppercase">Помоги своему клиенту стать обладателем красивой и здоровой кожи</div>
-                  <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
-                    Записаться
-                  </Button>
                 </div>
+                <Button className="w-full mt-4" onClick={() => document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' })}>
+                  Записаться
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -606,7 +599,11 @@ export default function Index() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2">
-              <Icon name="BookOpen" className="h-6 w-6 text-primary" />
+              <img 
+                src="https://cdn.poehali.dev/files/Logo_Li_2-01.png" 
+                alt="НАПО лого"
+                className="h-8 w-auto object-contain"
+              />
               <span className="font-bold">НАПО</span>
             </div>
             <p className="text-sm text-muted-foreground text-center">
